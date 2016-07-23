@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.juanp.colorquotes.MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nueva Cita"
+        android:id="@+id/botonCita"
+        android:onClick="nuevaCita"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#337bbe"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esto será una cita de alguien"
+        android:id="@+id/textoCita"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="#337bbe"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="autor"
+        android:id="@+id/textoAutor"
+        android:layout_below="@+id/textoCita"
+        android:layout_alignRight="@+id/textoCita"
+        android:layout_alignEnd="@+id/textoCita"
+        android:textSize="24sp"
+        android:textColor="#337bbe" />
+</RelativeLayout>
